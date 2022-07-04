@@ -14,7 +14,7 @@ DESCRIPTION = """
     Model Factory helps us to generate model training and grid search code automatically based 
     on configuration provided.
     """
-REQUIREMENT_FILE_NAME = os.path.join(this_directory, "requirements.txt")
+REQUIREMENT_FILE_NAME = os.path.join(os.getcwd(), "requirements.txt")
 HYPHEN_E_DOT = "-e ."
 
 
@@ -42,6 +42,6 @@ setup(
     author=AUTHOR,
     packages=find_packages(),
     install_requires=get_requirements_list(),
-    long_description=long_description,
+    #long_description=long_description,
     long_description_content_type='text/markdown',
 )
