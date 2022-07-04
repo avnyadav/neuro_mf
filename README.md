@@ -10,7 +10,7 @@ It is very simple.
 We will export sample model config file in config directory
 You can use below python to export sample configuration file.
 
-```commandline
+```python
 from neuro_mf.config import get_sample_model_config_yaml_file
 
 if __name__ == "__main__":
@@ -21,7 +21,8 @@ Check your config folder
 You will find a file name as "model.yaml"
 
 content of model.yaml
-```commandline
+
+```yaml
 grid_search:
   class: GridSearchCV
   module: sklearn.model_selection
@@ -42,7 +43,7 @@ model_selection:
 ```
 
 Now update the content of model.yaml file with below content for testing.
-```commandline
+```yaml
 grid_search:
   class: GridSearchCV
   module: sklearn.model_selection
@@ -69,7 +70,7 @@ model_selection:
 ```
 
 Now Let's try to train a RandomForestRegressor
-```commandline
+```python
 import os
 
 from neuro_mf.config import get_sample_model_config_yaml_file
