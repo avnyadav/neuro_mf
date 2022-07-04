@@ -8,7 +8,7 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 PROJECT_NAME = "neuro_mf"
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 AUTHOR = "Avnish Yadav"
 DESCRIPTION = """
    iNeuron Model Factory helps us to generate model training and grid search code automatically based 
