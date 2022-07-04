@@ -2,16 +2,13 @@
 
 neuro-ml is a open source library designed to avoid writing duplicate code.
 
-You can use new model of scikit learn without writing any cod.
-Model training can be control by configuration file
+You can use new model of scikit learn without writing any code.
+Model training can be control by configuration file.
 
 How to generate configuration file
-
-It is very simple. 
-
+It is very simple.
 We will export sample model config file in config directory
-
-You can use below command to export sample configuration
+You can use below python to export sample configuration file.
 
 ```commandline
 from neuro_mf.config import get_sample_model_config_yaml_file
@@ -44,8 +41,7 @@ model_selection:
       - param_value_2
 ```
 
-Now update the content of model.yaml file with below content
-for testing
+Now update the content of model.yaml file with below content for testing.
 ```commandline
 grid_search:
   class: GridSearchCV
