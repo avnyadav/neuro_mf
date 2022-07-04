@@ -7,11 +7,11 @@ from typing import List
 # this_directory = Path(__file__).parent
 # long_description = (this_directory / "README.md").read_text()
 
-PROJECT_NAME = "model_factory"
+PROJECT_NAME = "neuron_mf"
 VERSION = "0.0.1"
 AUTHOR = "Avnish Yadav"
 DESCRIPTION = """
-    Model Factory helps us to generate model training and grid search code automatically based 
+   Neuron Model Factory helps us to generate model training and grid search code automatically based 
     on configuration provided.
     """
 

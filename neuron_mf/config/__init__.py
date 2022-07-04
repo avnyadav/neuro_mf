@@ -1,4 +1,4 @@
-from model_factory.constant import *
+from neuron_mf.constant import *
 import os
 import yaml
 
