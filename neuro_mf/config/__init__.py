@@ -1,4 +1,4 @@
-from neuron_mf.constant import *
+from neuro_mf.constant import *
 import os
 import yaml
 
