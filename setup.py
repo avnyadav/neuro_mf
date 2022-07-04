@@ -25,6 +25,7 @@ def get_requirements_list() -> List[str]:
     of libraries mentioned in requirements.txt file
     """
     print(os.listdir("."))
+    print(f"Is file available->{REQUIREMENT_FILE_NAME}")
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
         requirement_list = requirement_file.readlines()
         requirement_list = [requirement_name.replace("\n", "") for requirement_name in requirement_list]
