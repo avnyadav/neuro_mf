@@ -13,7 +13,7 @@ DESCRIPTION="""
     Model Factory helps us to generate model training and grid search code automatically based 
     on configuration provided.
     """
-REQUIREMENT_FILE_NAME="./requirements.txt"
+REQUIREMENT_FILE_NAME="requirements.txt"
 HYPHEN_E_DOT = "-e ."
 
 
