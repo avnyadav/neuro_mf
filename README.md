@@ -1,11 +1,13 @@
 ![image](https://user-images.githubusercontent.com/34875169/177150753-b68b0c66-3b15-4ecc-b168-1a77ebc3fc62.png)
 
+neuro-ml is an open-source library designed to avoid writing duplicate code.
 
-neuro-ml is a open source library designed to avoid writing duplicate code.
 
-You can use new model of scikit learn without writing any code.
-Model training can be control by configuration file.
-> # <center>neuro_mf.ModelFactory</center>
+You can use the new model of sci-kit learn without writing any code.
+
+Model training can be controlled by a configuration file.
+
+
 
 >class neuro_mf.ModelFactory(model_config_path:str) [source](https://github.com/avnyadav/neuro_mf/blob/main/neuro_mf/__init__.py#L33)
 
