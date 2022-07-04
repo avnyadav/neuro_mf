@@ -14,6 +14,8 @@ DESCRIPTION = """
    iNeuron Model Factory helps us to generate model training and grid search code automatically based 
     on configuration provided.
     """
+REPO_NAME = "model_factory"
+AUTHOR_USER_NAME  = "avnyadav"
 
 setup(
     name=PROJECT_NAME,
@@ -24,4 +26,5 @@ setup(
     install_requires=["PyYAML","scikit-learn"],
     long_description=long_description,
     long_description_content_type='text/markdown',
+    url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}"
 )
