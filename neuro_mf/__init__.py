@@ -11,7 +11,7 @@ from typing import List
 from neuro_mf.constant import  *
 logger = logging.getLogger(__name__)
 
-__version__ = "0.0.1"
+__version__ = "0.0.5"
 
 InitializedModelDetail = namedtuple("InitializedModelDetail",
                                     ["model_serial_number", "model", "param_grid_search", "model_name"])
@@ -74,6 +74,11 @@ class ModelFactory:
 
     @staticmethod
     def class_for_name(module_name, class_name):
+        """
+        This function is equivalent to
+        from module_name import class_name
+        return: class_name
+        """
         try:
             # load the module, will raise ImportError if module cannot be loaded
             module = importlib.import_module(module_name)
@@ -227,6 +232,12 @@ class ModelFactory:
             raise e
 
     def get_best_model(self, X, y, base_accuracy=0.6) -> BestModel:
+        """
+        X: input feature
+        y: Target feature
+        base_accuracy: set expected accuracy if model is not able to provide required accuracy
+        exception will be raised.
+        """
         try:
             logger.info("Started Initializing model from config file")
             initialized_model_list = self.get_initialized_model_list()
