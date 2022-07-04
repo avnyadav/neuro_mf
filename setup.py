@@ -3,17 +3,18 @@ import os
 from setuptools import setup, find_packages
 from pathlib import Path
 from typing import List
+
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-PROJECT_NAME="model_factory"
-VERSION="0.0.1"
-AUTHOR="Avnish Yadav"
-DESCRIPTION="""
+PROJECT_NAME = "model_factory"
+VERSION = "0.0.1"
+AUTHOR = "Avnish Yadav"
+DESCRIPTION = """
     Model Factory helps us to generate model training and grid search code automatically based 
     on configuration provided.
     """
-REQUIREMENT_FILE_NAME="requirements.txt"
+REQUIREMENT_FILE_NAME = "requirements.txt"
 HYPHEN_E_DOT = "-e ."
 
 
@@ -25,7 +26,7 @@ def get_requirements_list() -> List[str]:
     of libraries mentioned in requirements.txt file
     """
     print(os.listdir("."))
-    print(f"Is file available->{REQUIREMENT_FILE_NAME}")
+    print(f"{os.getcwd()}Is file available->{os.path.exists(REQUIREMENT_FILE_NAME)}")
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
         requirement_list = requirement_file.readlines()
         requirement_list = [requirement_name.replace("\n", "") for requirement_name in requirement_list]
