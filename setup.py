@@ -14,7 +14,7 @@ DESCRIPTION = """
     Model Factory helps us to generate model training and grid search code automatically based 
     on configuration provided.
     """
-REQUIREMENT_FILE_NAME = os.path.join(this_directory,"requirements.txt")
+REQUIREMENT_FILE_NAME = os.path.join(this_directory, "requirements.txt")
 HYPHEN_E_DOT = "-e ."
 
 
@@ -26,7 +26,7 @@ def get_requirements_list() -> List[str]:
     of libraries mentioned in requirements.txt file
     """
     print(os.listdir("."))
-    print(f"{os.getcwd()}Is file available->{os.path.exists(REQUIREMENT_FILE_NAME)}")
+    print(f"{os.getcwd()}Is file available->{os.path.exists(REQUIREMENT_FILE_NAME)} path: {REQUIREMENT_FILE_NAME}")
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
         requirement_list = requirement_file.readlines()
         requirement_list = [requirement_name.replace("\n", "") for requirement_name in requirement_list]
