@@ -1,3 +1,5 @@
+import os
+
 from setuptools import setup, find_packages
 from pathlib import Path
 from typing import List
@@ -22,6 +24,7 @@ def get_requirements_list() -> List[str]:
     return This function is going to return a list which contain name
     of libraries mentioned in requirements.txt file
     """
+    print(os.listdir("."))
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
         requirement_list = requirement_file.readlines()
         requirement_list = [requirement_name.replace("\n", "") for requirement_name in requirement_list]
