@@ -2,8 +2,10 @@ from neuro_mf.constant import *
 import os
 import yaml
 
+
 def get_sample_model_config_yaml_file(export_dir: str):
     """
+    export_dir: Location to export file
     """
     try:
         model_config = {

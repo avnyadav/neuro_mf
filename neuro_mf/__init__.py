@@ -3,7 +3,7 @@ import logging
 import importlib
 import numpy as np
 import yaml
-from housing.exception import HousingException
+
 import os
 import sys
 from collections import namedtuple
@@ -12,6 +12,22 @@ from typing import List
 logger = logging.getLogger(__name__)
 
 __version__ = "0.0.1"
+
+InitializedModelDetail = namedtuple("InitializedModelDetail",
+                                    ["model_serial_number", "model", "param_grid_search", "model_name"])
+
+GridSearchedBestModel = namedtuple("GridSearchedBestModel", ["model_serial_number",
+                                                             "model",
+                                                             "best_model",
+                                                             "best_parameters",
+                                                             "best_score",
+                                                             ])
+
+BestModel = namedtuple("BestModel", ["model_serial_number",
+                                     "model",
+                                     "best_model",
+                                     "best_parameters",
+                                     "best_score", ])
 
 
 class ModelFactory:

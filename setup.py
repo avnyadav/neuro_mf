@@ -4,8 +4,8 @@ from setuptools import setup, find_packages
 from pathlib import Path
 from typing import List
 
-# this_directory = Path(__file__).parent
-# long_description = (this_directory / "README.md").read_text()
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 PROJECT_NAME = "neuro_mf"
 VERSION = "0.0.1"
@@ -22,6 +22,6 @@ setup(
     author=AUTHOR,
     packages=find_packages(),
     install_requires=["PyYAML","scikit-learn"],
-    #long_description=long_description,
+    long_description=long_description,
     long_description_content_type='text/markdown',
 )
